@@ -1,0 +1,51 @@
+@startuml
+left to right direction
+
+actor Administrateurs as Admin
+actor Professeurs as Prof
+actor Étudiants as Etudiant
+
+rectangle "Système de Gestion des Absences" {
+    Admin -- (Ajouter,  consulter et supprimer les absences des étudiants)
+    Admin -- (Ajouter et supprimer des utilisateurs)
+    Admin -- (Importer les listes d'étudiants)
+    Admin -- (Exporter un fichier Excel des absences par filière)
+  
+    
+    
+    Admin -- (Ajouter un élément ou une filière)
+    
+    
+    Prof -- (Enregistrer les absences des étudiants)
+  
+    
+    Prof -- (Consulter les messages envoyés par les étudiants)
+
+    
+    Prof -- (Valider ou rejeter les justifications d'absence envoyées par les étudiants)
+    
+    Prof -- (Consulter les listes des absences)
+    (Consulter les listes des absences).>(Authentification):include
+    
+    Etudiant -- (Envoyer des messages aux professeurs pour justifier leurs absences)
+    
+    Etudiant -- (Consulter l'état de validation de leurs messages envoyés)
+    
+    Admin --|> Prof
+    left to right direction
+        (Envoyer des messages aux professeurs pour justifier leurs absences).>(Authentification):include
+
+        (Consulter l'état de validation de leurs messages envoyés).>(Authentification):include
+
+        (Valider ou rejeter les justifications d'absence envoyées par les étudiants).>(Authentification):include
+
+        (Consulter les messages envoyés par les étudiants).>(Authentification):include
+      (Enregistrer les absences des étudiants).>(Authentification):include
+    (Ajouter un élément ou une filière).>(Authentification):include
+    (Ajouter,  consulter et supprimer les absences des étudiants)  .>(Authentification):include 
+    (Ajouter et supprimer des utilisateurs).>(Authentification):include
+    (Importer les listes d'étudiants).>(Authentification):include
+    (Exporter un fichier Excel des absences par filière).>(Authentification):include
+}
+
+@enduml

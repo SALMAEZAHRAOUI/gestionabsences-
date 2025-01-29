@@ -40,10 +40,7 @@ Une application web complète pour la gestion des absences dans les établisseme
   - JavaScript (jQuery + AJAX)
  
 
-- **Sécurité** :
-  - Authentification RBAC
-  - Protection CSRF/XSS
-  - Validation stricte des entrées
+
 
 ## Prérequis
 

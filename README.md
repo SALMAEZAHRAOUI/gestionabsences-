@@ -1,4 +1,4 @@
-![kk](https://github.com/user-attachments/assets/7b843884-124f-4207-8af5-a6a5f59104b6)
+
 # Système de Gestion des Absences
 
 [![PHP Version](https://img.shields.io/badge/PHP-8.0%2B-blue)](https://php.net)
@@ -47,6 +47,7 @@ Une application web complète pour la gestion des absences dans les établisseme
 
 ## Prérequis
 
+
 - PHP 8.0 ou supérieur
 - MySQL 5.7+ ou MariaDB 10.3+
 - Composer
@@ -58,4 +59,6 @@ Une application web complète pour la gestion des absences dans les établisseme
 ```bash
 git clone https://github.com/SALMAEZAHRAOUI/gestionabsences-.git
 cd gestionabsences-
+![kk](https://github.com/user-attachments/assets/7b843884-124f-4207-8af5-a6a5f59104b6)
+![INDEX](https://github.com/user-attachments/assets/9ffb5883-041e-4eb2-bf27-39c712339638)
 
